@@ -8,6 +8,9 @@ alias www="cd ~/Sites"
 alias g="git"
 alias mamp="open /Applications/MAMP/MAMP.app"
 
+# Git commands
+alias gco="git checkout"
+
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
 	colorflag="--color"
@@ -30,3 +33,6 @@ export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40
 
 # Make Grunt print stack traces by default
 command -v grunt > /dev/null && alias grunt="grunt --stack"
+
+alias nv='sudo ~/.npm-global/bin/n'
+alias tt='~/dotfiles/scripts/touchpad.sh'

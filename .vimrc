@@ -44,7 +44,7 @@ set showcmd                     " Show the (partial) command as it’s being typ
 " Start scrolling three lines before the horizontal window border
 set scrolloff=3
 
-set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/vendor,*/bower_components/*,*/node_modules/*,*/functional-test/*,*/response-management-agent-tests/*
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/vendor,*/bower_components/*,*/node_modules/*,*/functional-test/*,*/response-management-agent-tests/*,*/tmp/*
 
 " =============================================================================================
 " command mappings ============================================================================
@@ -79,6 +79,8 @@ nnoremap <silent> <leader>, :nohl<cr>
 map <leader><tab> :tabn<cr>
 map <leader><esc> :tabp<cr>
 nnoremap <leader><space> :Ag<space>
+
+nnoremap <leader>. @
 
 " =============================================================================================
 " vundle plugins ==============================================================================

@@ -1,4 +1,5 @@
 [ -n "$PS1" ] && source ~/.bash_profile;
+eval `dircolors ~/gnome-terminal-colors-solarized/dircolors`
 
-export NVM_DIR="/Users/jrrucker/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+alias grep="bin/grep $GREP_OPTIONS"
+unset GREP_OPTIONS
